@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <title>Página de receitas</title>
+   </head>
+   <body>
+      <div id="cont">
+      <nav>
+         <div id="logo" class="container">
+            <a href="index.html"><img src="Imagens/logo.png" alt="logo"></a>
+         </div>
+         <div class="container menu">
+            <a class="nav" id="active" href="index.html">Home</a>
+            <a class="nav" href="#receitas">Receitas</a>
+            <a class="nav">Sobre Nós</a>
+            <a class="nav">Blog</a>
+         </div>
+      </nav>
+      </header>
+      <script>
+         document.documentElement.style.scrollBehavior = "smooth";
+         document.getElementById("id-name").scrollIntoView();
+      </script>
+      <section id="title">
+         <div id="titulo">
+            <h1>Mais Do Que Uma Simples <br> Página de <a id="gradient">Receitas</a></h1>
+            <h2 class="sub">Uma página de receitas deliciosas feita com receitas roubadas de outros sites.</h2>
+            <button type="button" onclick="location.href='#receitas'">Nossas Receitas</button>
+         </div>
+         <div id="image">
+            <img src="Imagens/Bolo-imagem.jpg" alt="bolo foda" id="capa">
+         </div>
+      </section>
+      <div class="flex">
+         <h2 id="receitas">Nossas Receitas</h2>
+         <a href="#bolochocolate" class="contreceita receita">
+            <img class="contreceita" src="Imagens/Bolo-imagem.jpg" alt="bolo uau">
+            <h3 class="contreceita">Bolo de Chocolate</h3>
+            <p>Veja nossa deliciosa receita de bolo de chocolate!</p>
+         </a>
+         <a href="#bolocenoura" class="contreceita receita">
+            <img class="contreceita" src="Imagens/bolo-de-cenoura.jpg" alt="bolo uau">
+            <h3 class="contreceita">Bolo de Cenoura</h3>
+            <p>Veja nossa deliciosa receita de bolo de cenoura!</p>
+         </a>
+         <a href="#bolobanana" class="contreceita receita">
+            <img class="contreceita" src="Imagens/bolo-banana.jpg" alt="bolo uau">
+            <h3 class="contreceita">Bolo de Banana</h3>
+            <p>Veja nossa deliciosa receita de bolo de banana!</p>
+         </a>
+         <a href="#brigadeiro" class="contreceita receita">
+            <img class="contreceita" src="Imagens/brigadeiro.webp" alt="bolo uau">
+            <h3 class="contreceita">Brigadeiro</h3>
+            <p>Veja nossa deliciosa receita de brigadeiro!</p>
+         </a>
+      </div>
+      <br>
+      <div id="bolochocolate">
+      </div>
+      <div class="wrap-collabsible" id="bolochocolate">
+         <input id="collapsible" class="toggle" type="checkbox">
+         <label for="collapsible" class="lbl-toggle">
+         Bolo de Chocolate
+         </label>
+         <div class="collapsible-content">
+            <div class="content-inner">
+               <p>
+               <h3>Bolo de Chocolate</h3>
+               <video width="695px" height="390" controls poster="Imagens/Bolo-thumb.jpg" id="video" alt="video foda">
+                  <source src="Imagens/Bolo-de-chocolate-video.mp4" type="video/mp4">
+               </video>
+               <ul>
+                  <h3>Ingredientes</h3>
+                  <li>4 ovos</li>
+                  <li>2 colheres (sopa) de manteiga</li>
+                  <li>2 xícaras (chá) de açúcar</li>
+                  <li>1 xícara (chá) de leite</li>
+                  <li>4 colheres (sopa) de chocolate em pó</li>
+                  <li>3 xícaras (chá) de farinha de trigo</li>
+                  <li>2 colheres (sopa) de fermento</li>
+               </ul>
+               <h3>Modo de Preparo</h3>
+               <ol>
+                  <h4>Massa</h4>
+                  <li>
+                     <p>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</p>
+                  </li>
+                  <li>
+                     <p>Adicione o fermento e misture com uma espátula delicadamente.</p>
+                  </li>
+                  <li>
+                     <p>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</p>
+                  </li>
+                  <li>
+                     <p>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</p>
+                  </li>
+                  <li>
+                     <h4>Calda</h4>
+                     <p>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</p>
+                  </li>
+                  <li>
+                     <p>Desligue o fogo e acrescente o açúcar.</p>
+                  </li>
+               </ol>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="wrap-collabsible" id="bolocenoura">
+         <input id="collapsible2" class="toggle" type="checkbox">
+         <label for="collapsible2" class="lbl-toggle">
+         Bolo de Cenoura
+         </label>
+         <div class="collapsible-content">
+            <div class="content-inner">
+               <p>
+               <h3>Bolo de Cenoura</h3>
+               <video width="695px" height="390" controls poster="Imagens/Bolo-thumb.jpg" id="video" alt="video foda">
+                  <source src="Imagens/Bolo-de-chocolate-video.mp4" type="video/mp4">
+               </video>
+               <ul>
+                  <h3>Ingredientes</h3>
+                  <li>4 ovos</li>
+                  <li>2 colheres (sopa) de manteiga</li>
+                  <li>2 xícaras (chá) de açúcar</li>
+                  <li>1 xícara (chá) de leite</li>
+                  <li>4 colheres (sopa) de chocolate em pó</li>
+                  <li>3 xícaras (chá) de farinha de trigo</li>
+                  <li>2 colheres (sopa) de fermento</li>
+               </ul>
+               <h3>Modo de Preparo</h3>
+               <ol>
+                  <h4>Massa</h4>
+                  <li>
+                     <p>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</p>
+                  </li>
+                  <li>
+                     <p>Adicione o fermento e misture com uma espátula delicadamente.</p>
+                  </li>
+                  <li>
+                     <p>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</p>
+                  </li>
+                  <li>
+                     <p>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</p>
+                  </li>
+                  <li>
+                     <h4>Calda</h4>
+                     <p>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</p>
+                  </li>
+                  <li>
+                     <p>Desligue o fogo e acrescente o açúcar.</p>
+                  </li>
+               </ol>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="wrap-collabsible" id="bolobanana">
+         <input id="collapsible3" class="toggle" type="checkbox">
+         <label for="collapsible3" class="lbl-toggle">
+         Bolo de Banana
+         </label>
+         <div class="collapsible-content">
+            <div class="content-inner">
+               <p>
+               <h3>Bolo de Banana</h3>
+               <video width="695px" height="390" controls poster="Imagens/Bolo-thumb.jpg" id="video" alt="video foda">
+                  <source src="Imagens/Bolo-de-chocolate-video.mp4" type="video/mp4">
+               </video>
+               <ul>
+                  <h3>Ingredientes</h3>
+                  <li>4 ovos</li>
+                  <li>2 colheres (sopa) de manteiga</li>
+                  <li>2 xícaras (chá) de açúcar</li>
+                  <li>1 xícara (chá) de leite</li>
+                  <li>4 colheres (sopa) de chocolate em pó</li>
+                  <li>3 xícaras (chá) de farinha de trigo</li>
+                  <li>2 colheres (sopa) de fermento</li>
+               </ul>
+               <h3>Modo de Preparo</h3>
+               <ol>
+                  <h4>Massa</h4>
+                  <li>
+                     <p>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</p>
+                  </li>
+                  <li>
+                     <p>Adicione o fermento e misture com uma espátula delicadamente.</p>
+                  </li>
+                  <li>
+                     <p>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</p>
+                  </li>
+                  <li>
+                     <p>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</p>
+                  </li>
+                  <li>
+                     <h4>Calda</h4>
+                     <p>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</p>
+                  </li>
+                  <li>
+                     <p>Desligue o fogo e acrescente o açúcar.</p>
+                  </li>
+               </ol>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="wrap-collabsible" id="brigadeiro">
+         <input id="collapsible4" class="toggle" type="checkbox">
+         <label for="collapsible4" class="lbl-toggle">
+         Brigadeiro
+         </label>
+         <div class="collapsible-content">
+            <div class="content-inner">
+               <p>
+               <h3>Brigadeiro</h3>
+               <video width="695px" height="390" controls poster="Imagens/Bolo-thumb.jpg" id="video" alt="video foda">
+                  <source src="Imagens/Bolo-de-chocolate-video.mp4" type="video/mp4">
+               </video>
+               <ul>
+                  <h3>Ingredientes</h3>
+                  <li>4 ovos</li>
+                  <li>2 colheres (sopa) de manteiga</li>
+                  <li>2 xícaras (chá) de açúcar</li>
+                  <li>1 xícara (chá) de leite</li>
+                  <li>4 colheres (sopa) de chocolate em pó</li>
+                  <li>3 xícaras (chá) de farinha de trigo</li>
+                  <li>2 colheres (sopa) de fermento</li>
+               </ul>
+               <h3>Modo de Preparo</h3>
+               <ol>
+                  <h4>Massa</h4>
+                  <li>
+                     <p>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</p>
+                  </li>
+                  <li>
+                     <p>Adicione o fermento e misture com uma espátula delicadamente.</p>
+                  </li>
+                  <li>
+                     <p>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</p>
+                  </li>
+                  <li>
+                     <p>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</p>
+                  </li>
+                  <li>
+                     <h4>Calda</h4>
+                     <p>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</p>
+                  </li>
+                  <li>
+                     <p>Desligue o fogo e acrescente o açúcar.</p>
+                  </li>
+               </ol>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="container" id="sobrenos">
+         <div class="sobre">
+            <img class="imgsobre" src="Imagens/cozinha-sobre-nos.jpg" alt="">
+         </div>
+         <div class="sobre">
+            <h2 id="titsobre">Sobre Nós</h2>
+            <p id="txtsobre">Somos criadores de obras primas, construtores de sonhos, buscamos apenas o melhor da vida em forma de receitas e doçuras. <br> <br> Colocamos nosso esforço, dedicação e amor em todas as nossas receitas, sempre buscando o melhor para nossos visitantes. <br><br> Abrangemos e adicionaremos receitas de todos os tipos e tamanhos para que sempre tenha conteúdo novo para você.</p>
+         </div>
+      </div>
+      </div>
+   </body>
+   <footer>
+      Copyright © André Salvalaggio, 204
+   </footer>
+</html>

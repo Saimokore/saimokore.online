@@ -1,0 +1,269 @@
+body {
+    background-color: #060809;
+    color: #f0f7fa;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+#cont {
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+#logo {
+    width: 200px;
+    z-index: 100;
+}
+.sub {
+    margin-top: -20px;
+}
+.container {
+    display: flex;
+    justify-content: initial;
+    flex-direction: initial;
+    align-items: initial;
+}
+.menu {
+    gap: 50px;
+    flex-direction: row;
+}
+.receita {
+    padding: 20px;
+    background-color: rgba(82, 82, 82, 0.164);
+    flex-direction: column;
+    gap: 0px;
+    width: 20%;
+    line-height: 0px;
+    border-radius: 20px;
+}
+.flex {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+.contreceita {
+    font-size: 28px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+.nav {
+    z-index: 10;
+    font-size: 24px;
+    white-space: nowrap;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    transition: color 200ms;
+}
+.nav:hover {
+    color: #374dbe;
+}
+#active {
+    color: #374dbe;
+}
+#gradient {
+    background: -webkit-linear-gradient(0deg, rgba(54,71,161,1) 0%, rgba(98,59,176,1) 100%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+nav {
+    z-index: 10;
+    margin-top: 0px;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 70px;
+    gap: 20px;
+}
+#title {
+    display: flex;
+    min-height: 50vh;
+    line-height: 70px;
+    margin-bottom: 100px;
+    margin-top: -150px;
+}
+#titulo {
+    gap: 20px;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 70px;
+}
+button {
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #3647a1;
+    border: 0;
+    border-radius: 8px;
+    width: 200px;
+    height: 60px;
+    margin-left: -2px;
+    transition: background-color 200ms ease;
+}
+#receitas {
+    padding-top: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    width: 100%;
+}
+button:hover {
+    background-color: #374dbe;
+}
+.sobre {
+    width: 48%;
+    padding: 25px;
+    border-radius: 15px
+}
+.imgsobre {
+    border-radius: 20px;
+}
+#titsobre {
+    font-size: 50px;
+    font-weight: 600;
+}
+#txtsobre {
+    font-size: 24px;
+    line-height: 130%;
+    width: 90%;
+}
+#image {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 900px;
+    line-height: 70px;
+}
+#capa {
+    width: 110%;
+    margin-left: 40px;
+    -webkit-mask-image: radial-gradient(circle, black 100%, rgba(0, 0, 0, 0) 10%);
+    mask-image: radial-gradient(circle, black 40%, rgba(0, 0, 0, 0) 70%);
+}
+img {
+    width: 100%;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 90%;
+}
+h3 {
+    font-size: 38px;
+    font-weight: 600;
+}
+h4 {
+    font-size: 28px;
+    line-height: 10px;
+}
+li {
+    font-size: 20px;
+    line-height: 40px;
+}
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+video {
+    border-radius: 20px;
+}
+footer {
+    text-align: center;
+    background-color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: -30px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+/*Parte que foi copiada de https://www.digitalocean.com/community/tutorials/css-collapsible, o resto foi original*/
+.wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+}
+  
+input[type='checkbox'] {
+    display: none;
+}
+  
+.lbl-toggle {
+    display: block;
+  
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+  
+    padding: 1rem;
+  
+    color: white;
+    background: #000000;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+  
+.lbl-toggle:hover {
+    color: #374dbe;
+}
+  
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+}
+  
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+  
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+  
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    min-height: 300px;
+    max-height: max-content;
+}
+  
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.collapsible-content .content-inner {
+    background: rgba(22, 22, 22, 0.2);
+    border-bottom: 1px solid rgba(66, 167, 250, 0.45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}  
